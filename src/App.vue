@@ -15,7 +15,7 @@
         {{ product.name }}
       </li>
     </ul>
-    <p v-else>Please select a category to view products.</p>
+    <p v-else>Please select a category to view products.🤳🏻</p>
   </div>
 </template>
 
@@ -51,7 +51,7 @@ export default {
       if (this.searchQuery) {
         results = results.filter(product => product.name.toLowerCase().includes(this.searchQuery.toLowerCase()));
         if (results.length === 0) {
-          alert("Not yet! We don't have the product/s. Come back later.");
+          alert("Not yet! We don't have the product/s. Come back later⚠️.");
         }
       }
       if (this.selectedCategory) {
